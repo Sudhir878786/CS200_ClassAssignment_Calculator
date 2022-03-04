@@ -40,6 +40,15 @@ def bitAND():
     num=a&b
     response = "And operator of 2 numbers is " + str(num)
     return response
+@app.route("/bitOR",methods=["POST"])
+def bitOR():
+    jsonStr=request.get_json()
+    jsonObj=json.loads(jsonStr)
+    a=int(jsonObj['N1'])
+    b=int(jsonObj['N2'])
+    num=a^b
+    response="The Bitwise OR of the two numbers is "+str(num)
+    return response
 
 if __name__== "__main__":
     app.run()
