@@ -5,18 +5,37 @@
     <title>Example</title>
 	<script src="static/utility.js"></script>
   </head>
+  
   <body>
 	<h2>Example</h2>	
 	<form name="my_form" >
 		Please enter first  number &nbsp; <input type="text" name = "N1"><br>
         	Please enter second  number &nbsp; <input type="text" name = "N2"><br>        
 		<input type="button" class="btn btn-sm" onclick="submitData('add')" value="add">
-		<input type="button" class="btn btn-sm" onclick="submitData('bitAND')" value="Bitwise And">
+		<input type="button" class="btn btn-sm" onclick="submitData('isequal')" value="isequal">
+	  	<input type="button" class="btn btn-sm" onclick="submitData('expo')" value="expo">
 		<input type="button" class="btn btn-sm" onclick="submitData('bitOR')" value="Bitwise OR">
+
+
+	<!-- Add your input statements here -->
+		<input type="button" class="btn btn-sm" onclick="submitData('LOGICAL_AND')" value="LOGICAL_AND">
+		<input type="button" class="btn btn-sm" onclick="submitData('bitwiseXor')" value="Bitwise Xor">
+		<input type="button" class="btn btn-sm" onclick="submitData('bitAND')" value="Bitwise And">
+<<<<<<< HEAD
+		<input type="button" class="btn btn-sm" onclick="submitData('bitOR')" value="Bitwise OR">
+=======
+		<input type="button" class="btn btn-sm" id="hwr" onclick="submitData('add')" value="Sum">	
+		<input type="button" class="btn btn-sm" id="hwr"onclick="submitData('nth_root')" value="nth_root">	
+
+		<input type="button" class="btn btn-sm" onclick="submitData('multiply')" value="multiply">
+		<input type="button" class="btn btn-sm" onclick="submitData('lor')" value="Logical or">
+>>>>>>> 4708982053126091e2772ccdcd08f135d40960ba
 		<!-- Add your input statements here -->
+		<input type="button" class="btn btn-sm" onclick="submitData('logarithm')" value="logab">
 	</form>	
 	<div class="row">
     			<div class="col-md-8" align="left" style="float:left; margin-top: 0.45cm;" id="output_div">
+
     			</div>
     	</div>			
 </body>
